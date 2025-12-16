@@ -18,8 +18,8 @@ export default function Home() {
       {/* Sidebar FIXED (tidak ikut flow) */}
       <Sidebar />
 
-      {/* Konten utama HARUS di-offset */}
-      <main className="pt-0 lg:pt-24 px-4 lg:px-8 pb-6 space-y-20 lg:ml-80">
+      {/* Konten utama - padding top disesuaikan untuk mobile */}
+      <main className="pt-16 lg:pt-24 px-4 lg:px-8 pb-6 space-y-20 lg:ml-80">
         <div id="home" style={{ scrollMarginTop: '100px' }}>
           <HeroSection />
         </div>

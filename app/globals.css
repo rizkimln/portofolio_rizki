@@ -142,3 +142,25 @@ body {
   -ms-overflow-style: none; /* IE dan Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+/* FIX: Remove white background from html and body */
+html,
+body {
+  @apply bg-transparent;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* FIX: iOS safe area - make it match the gradient background */
+html {
+  background: linear-gradient(to bottom right, #0f172a, #581c87, #0f172a);
+}
+
+body.dark {
+  background: linear-gradient(to bottom right, #0f172a, #581c87, #0f172a);
+}
+
+body.light {
+  background: linear-gradient(to bottom right, #f9fafb, #dbeafe, #f3f4f6);
+}

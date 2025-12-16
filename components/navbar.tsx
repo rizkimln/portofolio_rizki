@@ -66,7 +66,7 @@ export function Navbar() {
     <>
       <nav
         className={`fixed top-0 left-0 lg:left-80 right-0 z-50 px-4 lg:px-8 py-4 lg:py-6 transition-all duration-500 ease-in-out ${
-          isScrolled ? (theme === 'dark' ? 'bg-black/10 backdrop-blur-md border-b border-white/10 shadow-lg shadow-black/20' : 'bg-white/10 backdrop-blur-md border-b border-black/10 shadow-lg shadow-black/10') : 'bg-transparent'
+          isScrolled ? (theme === 'dark' ? 'bg-black/40 backdrop-blur-md border-b border-white/10 shadow-lg shadow-black/20' : 'bg-white/40 backdrop-blur-md border-b border-black/10 shadow-lg shadow-black/10') : 'bg-transparent'
         }`}
       >
         <div className="flex items-center justify-between">
