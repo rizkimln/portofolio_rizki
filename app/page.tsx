@@ -15,25 +15,23 @@ export default function Home() {
       {/* Navbar */}
       <Navbar />
 
-      <div className="flex flex-col lg:flex-row">
-        {/* Sidebar responsif */}
-        <div className="w-full lg:w-80">
-          <Sidebar />
+      {/* Sidebar FIXED (tidak ikut flow) */}
+      <Sidebar />
+
+      {/* Konten utama HARUS di-offset */}
+      <main className="pt-0 lg:pt-24 px-4 lg:px-8 pb-6 space-y-20 lg:ml-80">
+        <div id="home" style={{ scrollMarginTop: '100px' }}>
+          <HeroSection />
         </div>
 
-        {/* Konten utama */}
-        <main className="flex-1 pt-0 lg:pt-24 px-4 lg:px-8 pb-6 space-y-20">
-          <div id="home" style={{ scrollMarginTop: '100px' }}>
-            <HeroSection />
-          </div>
-          <div id="about" style={{ scrollMarginTop: '100px' }}>
-            <AboutSection />
-          </div>
-          <div id="projects" style={{ scrollMarginTop: '100px' }}>
-            <ProjectsSection />
-          </div>
-        </main>
-      </div>
+        <div id="about" style={{ scrollMarginTop: '100px' }}>
+          <AboutSection />
+        </div>
+
+        <div id="projects" style={{ scrollMarginTop: '100px' }}>
+          <ProjectsSection />
+        </div>
+      </main>
     </div>
   );
 }
